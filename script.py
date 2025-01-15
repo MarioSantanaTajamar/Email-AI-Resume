@@ -6,6 +6,8 @@ import tiktoken
 from dotenv import load_dotenv
 load_dotenv()
 
+# para correr el programa
+# streamlit run script.py        
 client = AzureOpenAI(
   azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT"),
   api_key=os.getenv("AZURE_OPENAI_API_KEY"),
